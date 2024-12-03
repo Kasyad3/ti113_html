@@ -14,25 +14,25 @@
             <legend>Identificação do dono do animal</legend>
             <tr>
                 <td><label for="txt_nome">Nome:</label></td>
-                <td><input placeholder="Digite o nome completo do dono do animal" type="text" name="txt_nome" id="txt_nome"></td> <br>
+                <td><input size="35" placeholder="Digite o nome completo do dono do animal" type="text" name="txt_nome" id="txt_nome"></td> <br>
             </tr>
             <tr>
                 <td><label for="txt_endereco">Endereço:</label></td>
-                <td><input placeholder="Digite o endereço" type="text" name="txt_endereco" id="txt_endereco"></td><br>
+                <td><input size="25" placeholder="Digite o endereço" type="text" name="txt_endereco" id="txt_endereco"></td><br>
             </tr>
 
             <tr>
                 <td><label for="txt_cep">CEP:</label></td>
-                <td><input placeholder="XXXXX-XXX" type="text" name="txt_cep" id="txt_cep"></td><br>
+                <td><input maxlength="9" size="10" placeholder="XXXXX-XXX" type="text" name="txt_cep" id="txt_cep"></td><br>
             </tr>
             <tr>
                 <td><label for="txt_email">Email:</label></td>
-                <td><input placeholder="Digite o endereço de email"  type="email" name="txt_email" id="txt_email"></td><br>
+                <td><input size="25" placeholder="Digite o endereço de email"  type="email" name="txt_email" id="txt_email"></td><br>
             </tr>
 
             <tr>
                 <td><label for="tel_telefone">Tel/Cel:</label></td>
-                <td><input placeholder="99 99999-9999" type="tel" name="tel_telefone" id="tel_telefone"></td><br>
+                <td><input maxlength="20" placeholder="99 99999-9999" type="tel" name="tel_telefone" id="tel_telefone"></td><br>
             </tr>
         </fieldset>
 
@@ -62,7 +62,7 @@
                 </select></td> <br>
 
                 <td><label for="txt_observacao">Observação:</label></td>
-                <td><textarea placeholder="Digite alguma informação sobre o animal." name="txt_observacao" id="txt_observacao"></textarea></td>
+                <td><textarea  maxlength="350" placeholder="Digite alguma informação sobre o animal." name="txt_observacao" id="txt_observacao"></textarea></td>
 
             </tr>
 
@@ -87,17 +87,17 @@
 
             <tr>
                 <td><label for="primeira_opcao">Primeira opção de horário</label></td>
-                <td><input type="time" name="time_primeiro" id="time_primeiro"></td> <br>
+                <td><input type="datetime-local" name="time_primeiro" id="time_primeiro"></td> <br>
             </tr>
 
             <tr>
                 <td><label for="segunda_opcao">Segunda opção de horário</label></td>
-                <td><input type="time" name="time_segundo" id="time_segundo"></td>
+                <td><input type="datetime-local" name="time_segundo" id="time_segundo"></td>
             </tr>
         </fieldset>
 
-        <button id="btn_enviar" name="btn_enviar" type="submit">Enviar</button>
-
+        <button id="btn_enviar" name="btn_enviar" type="submit">Enviar</button> &nbsp;&nbsp;&nbsp;&nbsp;
+        <button id="btn_apagar" name="btn_apagar" type="reset">Apagar</button>
     </form>
 </body>
 </html>

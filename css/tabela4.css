@@ -18,7 +18,6 @@ p{
 
 #btn1{
     background: linear-gradient(to left , red, orange, green, blue, violet);
-    background-color: palevioletred;
     padding: 10px;
     border-radius: 15px;
     border: 0;
@@ -26,7 +25,6 @@ p{
 
 #btn2{
     background: linear-gradient(to left , red, orange, green, blue, violet);
-    background-color: magenta;
     padding: 10px;
     border-radius: 15px;
     border: 0;
